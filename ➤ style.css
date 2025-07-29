@@ -1,0 +1,48 @@
+css
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #ffe6f0, #fff);
+  color: #d63384;
+  text-align: center;
+  padding: 50px;
+}
+
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 8px;
+ cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.cake-area {
+  position: relative;
+  margin-top: 30px;
+}
+
+.cake, .knife {
+  width: 150px;
+}
+
+.knife {
+  position: absolute;
+  top: -50px;
+  left: 100px;
+  cursor: grab;
+}
+

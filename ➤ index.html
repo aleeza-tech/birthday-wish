@@ -1,0 +1,41 @@
+``html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="screen1" class="screen">
+    <h1>🎉 Happy Birthday! 🎉</h1>
+    <button onclick="goToScreen(2)">Next</button>
+  </div>
+
+  <div id="screen2" class="screen hidden">
+    <h2>Click the button to send your wish!</h2>
+    <button onclick="goToScreen(3)">Wish Now</button>
+  </div>
+<div id="screen3" class="screen hidden">
+    <h3>✨ Special Lines for My Friend ✨</h3>
+    <p>You are not just a friend, you're a blessing. May your smile shine brighter than ever today!</p>
+    <button onclick="goToScreen(4)">Next</button>
+  </div>
+
+  <div id="screen4" class="screen hidden">
+    <h2>🎂 Cut the Cake 🎂</h2>
+    <div class="cake-area">
+      <img src="cake.png" alt="Cake" class="cake"/>
+<img src="knife.png" alt="Knife" class="knife" draggable="true" ondragend="goToScreen(5)" />
+    </div>
+  </div>
+
+  <div id="screen5" class="screen hidden">
+    <h2>🎁 Birthday Card 🎁</h2>
+    <p>Wishing you a day filled with love, laughter, and cake! 💖</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
